@@ -1,12 +1,8 @@
 {
-  "dependencies": {
-    "chalk": "^5.4.1"
-  },
   "name": "reinasdelchisme",
   "version": "1.0.0",
   "description": " sistema de chismosas prfesionales",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/julianort11/reinas-del-chisme/issues"
   },
-  "homepage": "https://github.com/julianort11/reinas-del-chisme#readme"
+  "homepage": "https://github.com/julianort11/reinas-del-chisme#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }

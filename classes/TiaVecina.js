@@ -1,4 +1,4 @@
-const Chismosa = requiere("./Chismosa.js")
+const Chismosa = require("./Chismosa.js")
 
 class TiaVecina extends Chismosa{
     recolectarInfo(){
