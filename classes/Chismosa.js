@@ -1,9 +1,9 @@
 class Chismosa {
     #reputacion;
     #nivelChisme;
-    constructor (nombre, reputacion, nivelChisme){
+    constructor(nombre, reputacion = 5, nivelChisme = 0) {
         if (this.constructor === Chismosa) {
-            throw new Error ("No es posible crear un objeto de tipo Chismosa")
+            throw new Error("No es posible crear un objeto de tipo Chismosa");
         }
         this.nombre = nombre;
         this.#reputacion = reputacion;
@@ -11,11 +11,11 @@ class Chismosa {
     }
 
     recolectarInfo() {
-        throw new Error("Este método no tiene implementación porque es abstracto!!")
+        throw new Error("Este método no tiene implementación porque es abstracto!!");
     }
 
     contarChisme() {
-        throw new Error("Este método no tiene implementación porque es abstracto!!")
+        throw new Error("Este método no tiene implementación porque es abstracto!!");
     }
 
     getReputacion() {
@@ -26,12 +26,12 @@ class Chismosa {
         return this.#nivelChisme;
     }
 
-    aumentarChisme(cantidad){
-        this.#nivelChisme = Math.min(10, this.#nivelChisme + cantidad)
+    aumentarChisme(cantidad) {
+        this.#nivelChisme = Math.min(10, this.#nivelChisme + cantidad);
     }
 
-    afectarReputacion(cantidad){
-        this.#reputacion = Math.max(0, Math.min(this.#reputacion + cantidad))
+    afectarReputacion(cantidad) {
+        this.#reputacion = Math.max(0, Math.min(10, this.#reputacion + cantidad));
     }
 }
 
