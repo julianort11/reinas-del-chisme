@@ -25,4 +25,14 @@ class Chismosa {
     getNivelChisme() {
         return this.#nivelChisme;
     }
+
+    aumentarChisme(cantidad){
+        this.#nivelChisme = Math.min(10, this.#nivelChisme + cantidad)
+    }
+
+    afectarReputacion(cantidad){
+        this.#reputacion = Math.max(0, Math.min(this.#reputacion + cantidad))
+    }
 }
+
+module.exports = Chismosa;
