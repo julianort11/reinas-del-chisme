@@ -1,7 +1,7 @@
 const Chismosa = requiere("./Chismosa.js")
 
 class TiaVecina extends Chismosa{
-    recolectarInfo(nombre, reputacion, nivelChisme){
+    recolectarInfo(){
         console.log(this.nombre + "Aprovecha la reunion del barrio para escuchar discretamente" );
         this.aumentarChisme(Math.random()* 2 + 2 );
     }
